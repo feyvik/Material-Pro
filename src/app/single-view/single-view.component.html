@@ -1,0 +1,25 @@
+<div class="">
+  <nav *ngIf="!single">
+    <h1>Loading...</h1>
+    <h6>PUBLISHED ON loading...</h6>
+  </nav>
+  <div class="loader" *ngIf="!single">
+    <img src="../../assets/loader.svg" alt="">
+  </div>
+
+  <div class="" *ngIf="single">
+    <nav>
+      <h1>{{ single.title.rendered }}</h1>
+      <h6>PUBLISHED ON {{ date }}</h6>
+    </nav>
+    <div class="container">
+      <div class="mt-5 mb-5 single-view-image">
+        <img src="{{ single.featured_image }}" alt="" />
+      </div>
+      <div class="xyz" [innerHTML]="single.content.rendered"></div>
+    </div>
+  </div>
+  <footer>
+    <p>Copyright 2019</p>
+  </footer>
+</div>

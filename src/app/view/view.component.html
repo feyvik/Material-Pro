@@ -1,0 +1,48 @@
+<nav>
+  <h1>Epower Blog</h1>
+</nav>
+
+<div class="container-fluid mt-4">
+  <div class="loader" *ngIf="loading">
+    <mat-spinner></mat-spinner>
+  </div>
+  <mat-grid-list cols="2" rowHeight="2:1" *ngIf="!loading">
+    <mat-grid-tile
+      *ngFor="let blog of blogData"
+      id="showFristBlog"
+      style="min-height: 40vh;"
+    >
+      <a [routerLink]="['/single-view', combineSlug(blog.slug, blog.id)]">
+        <img width="400" src="{{ blog.featured_image }}" alt="" />
+        <div class="display-card">
+          <h4>{{ blog.title.rendered }}</h4>
+          <p [innerHTML]="blog.excerpt.rendered"></p>
+        </div>
+      </a>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <!-- <div class="display-row" *ngIf="!loading">
+    <div class="display" *ngFor="let blog of blogData" id="showFristBlog">
+      <a [routerLink]="['/single-view', combineSlug(blog.slug, blog.id)]">
+        <img src="{{ blog.featured_image }}" alt="" />
+        <div class="display-card">
+          <h4>{{ blog.title.rendered }}</h4>
+          <p [innerHTML]="blog.excerpt.rendered"></p>
+        </div>
+      </a>
+    </div>
+  </div> -->
+
+  <div class="row mb-5 mt-5">
+    <div class="col-6">
+      <button (click)="previous()">Previous</button>
+    </div>
+    <div class="col-6">
+      <button (click)="next()">Next</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Copyright 2019</p>
+</footer>
