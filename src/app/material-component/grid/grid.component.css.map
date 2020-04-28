@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,aAAa,CAAC;EACZ,UAAU,EAAE,SAAS;CACtB",
+    "sources": [
+        "grid.component.scss"
+    ],
+    "names": [],
+    "file": "grid.component.css"
+}

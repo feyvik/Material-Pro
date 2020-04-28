@@ -2,15 +2,20 @@
   <h1>Epower Blog</h1>
 </nav>
 
-<div class="container-fluid mt-4">
+<div class="container-fluid mt-4" style="min-height: 80vh;">
   <div class="loader" *ngIf="loading">
     <mat-spinner></mat-spinner>
   </div>
-  <mat-grid-list cols="2" rowHeight="2:1" *ngIf="!loading">
+  <mat-grid-list
+    cols="2"
+    rowHeight="1:1"
+    *ngIf="!loading"
+    style="min-height: 80vh;"
+  >
     <mat-grid-tile
       *ngFor="let blog of blogData"
       id="showFristBlog"
-      style="min-height: 40vh;"
+      style="min-height: 80vh;"
     >
       <a [routerLink]="['/single-view', combineSlug(blog.slug, blog.id)]">
         <img width="400" src="{{ blog.featured_image }}" alt="" />

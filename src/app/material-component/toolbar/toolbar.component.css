@@ -1,0 +1,21 @@
+.no-shadow mat-toolbar {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.example-fill-remaining-space {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.example-icon {
+  padding: 0 14px;
+}
+
+.example-spacer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+/*# sourceMappingURL=toolbar.component.css.map */

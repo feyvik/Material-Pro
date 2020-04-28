@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,sBAAsB,CAAC,iCAAiC;AACxD,sBAAsB,CAAC,uCAAuC,CAAC;EAC7D,UAAU,EAAE,CAAC;CACd;;AAED,AAAA,sBAAsB,CAAC,uCAAuC,CAAC;EAC7D,eAAe,EAAE,aAAa;EAC9B,WAAW,EAAE,MAAM;CACpB",
+    "sources": [
+        "expansion.component.scss"
+    ],
+    "names": [],
+    "file": "expansion.component.css"
+}

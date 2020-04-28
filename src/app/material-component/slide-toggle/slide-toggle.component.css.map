@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACV,MAAM,EAAE,IAAI;CACb;;AAED,AAAA,gBAAgB,CAAC;EACf,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,MAAM;EACrB,WAAW,EAAE,MAAM;EACnB,MAAM,EAAE,IAAI;CACb;;AAED,AAAA,eAAe,CAAC;EACd,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "slide-toggle.component.scss"
+    ],
+    "names": [],
+    "file": "slide-toggle.component.css"
+}

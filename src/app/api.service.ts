@@ -11,7 +11,7 @@ import { retry, catchError } from "rxjs/operators";
   providedIn: "root",
 })
 export class ApiService {
-  base_path = `https://epower.ng/wp-json/wp/v2/posts?page=1&per_page=6`;
+  base_path = `https://epower.ng/wp-json/wp/v2/posts`;
   list: any;
   constructor(private http: HttpClient) {}
 
